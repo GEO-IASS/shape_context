@@ -1,4 +1,4 @@
-% calcuate the Chi-square test value
+    % calcuate the Chi-square test value
 function [shape_context_cost1]=chi_square(cost_matrix1,cost_matrix2);
 n = size(cost_matrix1);
 shape_context_cost1 = zeros(n(1),n(1));

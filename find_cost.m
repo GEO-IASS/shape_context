@@ -5,7 +5,7 @@ if n == 13,
     n = 1;
 end
 
-unit = len/exp(4);
+unit = 2*len/exp(4);
 m = fix(log(dis/unit));
 if m <= 0,
     m = 0;

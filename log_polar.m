@@ -1,6 +1,7 @@
 % computing the cost matrix
-function [cost_matrix]=find_cost(x,circle_center,min_circle_length);
-n_point = 200;
+function [cost_matrix]=log_polar(x,circle_center,min_circle_length);
+tic
+n_point=200;
 cost_matrix = zeros(n_point, 60);
 for i=1:n_point,
     point_A = x(i,:);
@@ -12,6 +13,5 @@ for i=1:n_point,
             cost_matrix(i,cost_number) = cost_matrix(i,cost_number)+1;
         end
     end
-end
-
-    
+end   
+toc
