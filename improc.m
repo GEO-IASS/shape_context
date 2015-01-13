@@ -12,7 +12,7 @@ function [result]=improc(A)
     result = imrotate(ed,angle_1);
     total = sum(sum(result));
     if total < 200,
-        result = reshape(result,200);
+        result = re_shape(result,200);
     end
     
 end
